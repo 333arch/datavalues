@@ -1,0 +1,19 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Exists(string Item)
+        {
+            string[] inventory = {"Sword", "Shield", "Potion", "Amulet"};
+            Console.WriteLine(inventory.Contains(Item));
+        }
+        static void Main(String[] args)
+        {
+            Console.WriteLine("Please input an item");
+            string Item = Console.ReadLine();
+            Exists(Item);
+        }
+    }
+}
