@@ -1,0 +1,22 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void FormatName(string First, string Second)
+        {
+            string FirstLet = First.Substring(0, 1);
+            string SecondLet = Second.ToUpper();
+            Console.WriteLine(FirstLet + SecondLet);
+        }
+        static void Main(String[] args)
+        {
+            Console.WriteLine("Please input first name");
+            string First = Console.ReadLine();
+            Console.WriteLine("Please input second name");
+            string Second = Console.ReadLine();
+            FormatName(First, Second);
+        }
+    }
+}
