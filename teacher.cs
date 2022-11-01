@@ -4,7 +4,7 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Printed(string First, string Middle, string Last)
+        static void Initials(string First, string Middle, string Last)
         {
             string First2 = First.Substring(0, 1);
             string Middle2 = Middle.Substring(0, 1);
@@ -19,7 +19,7 @@ namespace ConsoleApp1
             string Middle = Console.ReadLine();
             Console.WriteLine("Please input your last name");
             string Last = Console.ReadLine();
-            Printed(First, Middle, Last);
+            Initials(First, Middle, Last);
         }
     }
 }
